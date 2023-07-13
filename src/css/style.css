@@ -1,0 +1,697 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  color: #2B2B2B;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 2.3em;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #1bcacf;
+}
+
+a:hover {
+  color: #2B2B2B;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 20px 0px;
+}
+
+.osio {
+  padding: 50px 100px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.keskitetty {
+  text-align: center;
+}
+
+.koroste {
+  font-size: 5em;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.valkoinen {
+  color: #fff;
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+/* Menupalkki-tyylit alkaa */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  color: #2B2B2B;
+}
+
+.nav-linkit a {
+  color: #2B2B2B;
+}
+
+.aktiivinen-sivu {
+  color: #1bcacf !important;
+}
+
+#logokuva {
+  height: auto;
+  max-width: 150px;
+  display: inline-block;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  color: #1bcacf;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 10px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.menuikoni {
+  display: none;
+  font-size: 35px;
+  user-select: none;
+}
+/* Menupalkki-tyylit loppuu */
+
+/* Footer-tyylit alkaa */
+footer {
+  color: #fff;
+  background-color: #2B2B2B;
+  font-size: 17px;
+}
+
+.footer-wrapper {
+  padding: 25px 0px;
+  text-align: center;
+}
+/* Footer-tyylit loppuu */
+
+/* Esittely-tyylit alkaa */
+.osio.esittely {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  font-weight: 400;
+
+}
+
+#esittely {
+  padding: 0;
+}
+
+#esittely > .flex-wrapper > .flex-blokki.oikea {
+  margin-left: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#esittely > .flex-wrapper > .flex-blokki.vasen {
+  min-width: 60%;
+}
+
+.flex-wrapper.pieni {
+  padding: 10px;
+}
+
+.flex-blokki {
+  flex: 1;
+}
+
+.flex-blokki.ikoni {
+  max-width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.flex-blokki.ikoni > i {
+  color: #fff;
+  font-size: 60px;
+}
+
+#profiilikuva {
+  max-width: 100%;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+.taito-boksi {
+  padding: 0px 150px;
+}
+
+.taito-tekstit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.palkki {
+    position: relative;
+    border: 2px solid #18b5ba;
+    border-radius: 20px;
+}
+
+.palkki div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #18b5ba;
+}
+
+#html-palkki {
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 100%;
+    }
+}
+
+#css-palkki {
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 100%;
+    }
+}
+
+#wordpress-palkki {
+    animation: wordpress-fill 2s forwards;
+}
+@keyframes wordpress-fill{
+    100%{
+        width: 70%;
+    }
+}
+/* Esittely-tyylit loppuu */
+
+/* Tällä hetkellä -tyylit alkaa */
+.osio.talla-hetkella {
+  background-image: url(../img/bg3.jpg);
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+#talla-hetkella {
+  background-color: #fff;
+  padding: 10px;
+  margin: 0px 100px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+#talla-hetkella > h2 {
+  text-align: center;
+}
+
+#talla-hetkella-lista {
+  padding: 0px 30px;
+}
+
+#talla-hetkella-lista > li {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+#talla-hetkella-lista > li > i {
+  color: #1BCACF;
+  font-size: 27px;
+  width: 27px;
+  padding-right: 10px;
+  text-align: center;
+}
+/* Tällä hetkellä -tyylit loppuu */
+
+/* Kokemukseni-tyylit alkaa */
+.osio.kokemukseni {
+  background-image: linear-gradient(90deg, #1BCACF 0%, #81FFD9 100%);
+}
+
+.kokemus-boksi {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+.kokemus-boksi > .flex-blokki > p {
+  margin: 0px;
+}
+
+.kokemus-boksi > .flex-blokki.ikoni {
+  max-width: 100px;
+}
+
+.kokemus-boksi > .flex-blokki.ikoni > i {
+  color: #1BCACF;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+/* Kokemukseni-tyylit loppuu */
+
+/* Koulutukseni-tyylit alkaa */
+#koulutukseni > .flex-wrapper {
+  align-items: center;
+}
+
+#koulutukseni > .flex-wrapper > .flex-blokki.oikea {
+  margin-left: 20px;
+}
+
+#koulutukseni > .flex-wrapper > .flex-blokki.vasen {
+  max-width: 40%;
+}
+
+#koulutukseni > .flex-wrapper > .flex-blokki.oikea > .koulutus-boksi > .flex-blokki.ikoni {
+  max-width: 100px;
+}
+
+#koulutukseni > .flex-wrapper > .flex-blokki.oikea > .koulutus-boksi > .flex-blokki.ikoni > i {
+  color: #1BCACF;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.koulutus-boksi {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.koulutus-boksi > .flex-blokki > p {
+  margin: 0;
+}
+
+#koulutuskuva {
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.kurssi-boksi {
+  font-size: 18px;
+  background-color: #fff;
+  flex: none;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.kurssi-boksi > p > i {
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+}
+/* Koulutukseni-tyylit loppuu */
+
+/* Harrastukseni-tyylit alkaa */
+.osio.harrastukseni {
+  background-color: #1BCACF;
+  color: #fff;
+}
+
+#harrastukseni > .flex-wrapper {
+  align-items: center;
+}
+
+#harrastukseni > .flex-wrapper > .flex-blokki.oikea {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#harrastukseni > .flex-wrapper > .flex-blokki.vasen {
+  min-width: 60%;
+}
+
+#kissakuva {
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+.kuvateksti {
+  font-size: 13px;
+}
+/* Harrastukseni-tyylit loppuu */
+
+/* Minusta sanottua -tyylit alkaa */
+.arvostelu {
+  text-align: center;
+  margin: 30px 50px 0px 50px;
+}
+
+.arvostelu-wrapper {
+  height: 320px;
+}
+
+.arvostelu-wrapper > .flex-wrapper > .flex-blokki.ikoni-vasen {
+  display: flex;
+  align-items: flex-start;
+  color: #1BCACF;
+  font-size: 50px;
+}
+
+.arvostelu-wrapper > .flex-wrapper > .flex-blokki.ikoni-oikea {
+  display: flex;
+  align-items: flex-end;
+  color: #1BCACF;
+  font-size: 50px;
+}
+
+#arvostelu-teksti {
+  font-size: 20px;
+  font-style: italic;
+  padding: 0px 20px;
+}
+
+#arvostelu-kirjoittaja {
+  margin: 0;
+}
+
+#arvostelu-titteli {
+  margin: 0;
+}
+
+.arvostelu-napit {
+  margin-top: 20px;
+}
+
+.edellinen-nappi, .seuraava-nappi {
+  color: #1BCACF;
+  font-size: 35px;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+}
+
+.edellinen-nappi:hover, .seuraava-nappi:hover {
+  color: #2B2B2B;
+}
+
+/* Minusta sanottua -tyylit loppuu */
+
+/* Ota yhteyttä -tyylit alkaa */
+.osio.yhteys {
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+}
+
+#yhteys {
+  background-color: #fff;
+  padding: 10px;
+  margin: 0px 150px;
+  text-align: center;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+#yhteys > p {
+  font-size: 23px;
+}
+
+#yhteys > p > i {
+  font-size: 45px;
+}
+/* Ota yhteyttä -tyylit loppuu */
+
+/* Tabletti-tyylit alkaa */
+@media only screen and (max-width: 940px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.0em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  .koroste {
+    font-size: 4.5em;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 36px;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+  }
+
+  .menu li + li {
+    margin-top: 5px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .menuikoni {
+    display: block;
+  }
+
+  .menuikoni:hover {
+    color: #1bcacf;
+  }
+
+  .osio {
+    padding: 25px 50px;
+  }
+
+  #esittely > .flex-wrapper {
+    display: block;
+  }
+
+  #esittely > .flex-wrapper > .flex-blokki.oikea {
+    margin-left: 0px;
+  }
+
+  #profiilikuva {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .taito-boksi {
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  #talla-hetkella {
+    margin: 0px 50px;
+  }
+
+  #koulutukseni > .flex-wrapper {
+    display: block;
+  }
+
+  #koulutukseni > .flex-wrapper > .flex-blokki.oikea {
+    margin-left: 0px;
+  }
+
+  #koulutukseni > .flex-wrapper > .flex-blokki.vasen {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  #harrastukseni > .flex-wrapper {
+    display: block;
+  }
+
+  #harrastukseni > .flex-wrapper > .flex-blokki.oikea {
+    margin-left: 0px;
+  }
+
+  #kissakuva {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .arvostelu {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .arvostelu-wrapper {
+    height: 380px;
+  }
+
+  #yhteys {
+    margin: 0px 50px;
+  }
+}
+/* Tabletti-tyylit loppuu */
+
+/* Mobiili-tyylit alkaa */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  .koroste {
+    font-size: 3.5em;
+  }
+
+  .osio {
+    padding: 20px 20px;
+  }
+
+  #talla-hetkella {
+    margin: 0px 0px;
+  }
+
+  #talla-hetkella-lista {
+    padding: 0px 10px;
+  }
+
+  #talla-hetkella-lista > li {
+    font-size: 18px;
+  }
+
+  #talla-hetkella-lista > li > i {
+    font-size: 22px;
+    width: 22px;
+  }
+
+  .kokemus-boksi > .flex-blokki.ikoni {
+    max-width: 60px;
+  }
+
+  .kokemus-boksi > .flex-blokki.ikoni > i {
+    font-size: 30px;
+  }
+
+  #koulutukseni > .flex-wrapper > .flex-blokki.oikea > .koulutus-boksi > .flex-blokki.ikoni {
+    max-width: 60px;
+  }
+
+  #koulutukseni > .flex-wrapper > .flex-blokki.oikea > .koulutus-boksi > .flex-blokki.ikoni > i {
+    font-size: 30px;
+  }
+
+  .arvostelu-wrapper > .flex-wrapper > .flex-blokki.ikoni-vasen {
+    font-size: 20px;
+  }
+
+  .arvostelu-wrapper > .flex-wrapper > .flex-blokki.ikoni-oikea {
+    font-size: 20px;
+  }
+
+  #arvostelu-teksti {
+    font-size: 18px;
+  }
+
+  #yhteys {
+    margin: 0px 0px;
+  }
+
+  #yhteys > p {
+    font-size: 18px;
+  }
+}
+/* Mobiili-tyylit loppuu */
+
+/* Mini-mobiili-tyylit alkaa */
+@media only screen and (max-width: 440px) {
+  #profiilikuva {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  #kissakuva {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .arvostelu-wrapper {
+    height: 550px;
+  }
+}
+/* Mini-mobiili-tyylit loppuu */
