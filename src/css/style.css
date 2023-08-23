@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-size: 16px;
   color: #2B2B2B;
+  background-color: #f5f5f5;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   line-height: 1.7;
@@ -20,7 +21,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-family: 'Julius Sans One', sans-serif;
   margin: 0px;
 }
@@ -144,6 +145,12 @@ footer {
   text-align: center;
 }
 /* Footer-tyylit loppuu */
+
+/* Etusivu-tyylit alkaa */
+#etusivu {
+  background-color: #fff;
+}
+/* Etusivu-tyylit loppuu */
 
 /* Esittely-tyylit alkaa */
 .osio.esittely {
@@ -478,6 +485,216 @@ footer {
 }
 /* Ota yhteyttä -tyylit loppuu */
 
+/* Aikajana-tyylit alkaa */
+.aikajana {
+	position: relative;
+	&::before {
+		content: '';
+		background: #ddd;
+		width: 2px;
+		height: 95%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.aikajana-itemi {
+	width: 100%;
+	margin-bottom: 30px;
+	&:nth-child(even) {
+		.aikajana-sisalto {
+			float: right;
+			padding: 40px 30px 10px 30px;
+			.pvm {
+				left: auto;
+				right: 0;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				border-style: solid;
+				width: 0;
+				height: 0;
+				top: 30px;
+				left: -15px;
+				border-width: 10px 15px 10px 0;
+				border-color: transparent #fff transparent transparent;
+			}
+		}
+	}
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.aikajana-sisalto {
+	position: relative;
+	width: 43%;
+	padding: 10px 30px;
+  border: 5px solid #fff;
+	background: #fff;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .4);
+	&::after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		width: 0;
+		height: 0;
+		top: 30px;
+		right: -15px;
+		border-width: 10px 0 10px 15px;
+		border-color: transparent transparent transparent #fff;
+	}
+}
+
+.aikajana-pallo {
+	width: 30px;
+	height: 30px;
+	background: #1bcacf;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-top: 25px;
+	margin-left: -15px;
+}
+
+.aikajana-kortti {
+	padding: 0!important;
+}
+
+.aikajana-kuvaboksi-wrapper {
+  height: 300px;
+  overflow: hidden;
+}
+
+.aikajana-kuvaboksi {
+	height: 300px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.aikajana-kuvaboksi:hover, .aikajana-kuva-boksi:focus {
+  -ms-transform: scale(1.35);
+  -moz-transform: scale(1.35);
+  -webkit-transform: scale(1.35);
+  -o-transform: scale(1.35);
+  transform: scale(1.35);
+  -webkit-transition: all .7s;
+  -moz-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+
+a > h3 {
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		left: 20px;
+	}
+
+.pvm {
+  background: #fff;
+  color: #2B2B2B;
+  display: inline-block;
+  padding: 2px 10px;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .pvm {
+  	left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	.aikajana {
+		&::before {
+			left: 30px;
+		}
+
+		.aikajana-pallo {
+			left: 30px;
+		}
+
+		.aikajana-sisalto {
+			max-width: 100%;
+			width: auto;
+			margin-left: 50px;
+		}
+
+		.aikajana-itemi {
+			&:nth-child(even) {
+				.aikajana-sisalto {
+					float: none;
+				}
+			}
+
+			&:nth-child(odd) {
+				.aikajana-sisalto {
+					&::after {
+						content: '';
+						position: absolute;
+						border-style: solid;
+						width: 0;
+						height: 0;
+						top: 30px;
+						left: -15px;
+						border-width: 10px 15px 10px 0;
+						border-color: transparent #fff transparent transparent;
+					}
+				}
+			}
+		}
+	}
+  .pvm {
+  	right: 0;
+  }
+}
+/* Aikajana-tyylit loppuu */
+
+/* Portfolionäyte-tyylit alkaa */
+.banneri-wrapper {
+  height: 550px;
+  padding: 0px;
+}
+
+.osio.portfolionayte > .wrapper {
+  max-width: 85%;
+  margin: auto;
+}
+
+.portfolio-wrapper {
+  margin-top: -250px;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .4);
+}
+
+.quote {
+  border-left: solid 3px #ccc;
+  padding: 10px;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.portfolio-wrapper > .flex-wrapper > .flex-blokki.vasen {
+  max-width: 30%;
+}
+
+.portfolio-wrapper > .flex-wrapper > .flex-blokki.oikea {
+  max-width: 70%;
+  margin-left: 30px;
+}
+
+.tyonayte_kuva {
+  max-width: 100%;
+}
+/* Portfolionäyte-tyylit loppuu */
+
 /* Tabletti-tyylit alkaa */
 @media only screen and (max-width: 940px) {
   h1 {
@@ -489,11 +706,11 @@ footer {
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .koroste {
@@ -608,11 +825,11 @@ footer {
   }
 
   h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1.0em;
   }
 
   .koroste {
@@ -674,6 +891,19 @@ footer {
 
   #yhteys > p {
     font-size: 18px;
+  }
+
+  .portfolio-wrapper > .flex-wrapper {
+    display: block;
+  }
+
+  .portfolio-wrapper > .flex-wrapper > .flex-blokki.vasen {
+    max-width: 100%;
+  }
+
+  .portfolio-wrapper > .flex-wrapper > .flex-blokki.oikea {
+    max-width: 100%;
+    margin-left: 0px;
   }
 }
 /* Mobiili-tyylit loppuu */
